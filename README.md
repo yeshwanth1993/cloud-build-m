@@ -1,3 +1,3 @@
-# code-examples
-Code examples used in the official Cloud Build documentation
-https://cloud.google.com/build/docs/
+# maven-example
+Code examples used in Building Java  applications using Cloud Build
+https://cloud.google.com/build/docs/building/build-java

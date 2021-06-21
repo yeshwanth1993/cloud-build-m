@@ -20,5 +20,5 @@ steps:
     entrypoint: mvn
     args: ["package", "-Dmaven.test.skip=true"]
   - name: gcr.io/cloud-builders/docker
-    args: ["build", "-t", "us-central1-docker.pkg.dev/$PROJECT_ID/docker-repo/cloud-build-m:${REPO_NAME}#{$BRANCH_NAME}#${COMMIT_SHA}", "--build-arg=JAR_FILE=target/hello-spring-1.0.0.jar", "."]
-images: ["us-central1-docker.pkg.dev/$PROJECT_ID/docker-repo/cloud-build-m:{REPO_NAME}#{$BRANCH_NAME}#${COMMIT_SHA}"]
+    args: ["build", "-t", "us-central1-docker.pkg.dev/$PROJECT_ID/docker-repo/cloud-build-m:${REPO_NAME}#${BRANCH_NAME}#${COMMIT_SHA}", "--build-arg=JAR_FILE=target/hello-spring-1.0.0.jar", "."]
+images: ["us-central1-docker.pkg.dev/$PROJECT_ID/docker-repo/cloud-build-m:${REPO_NAME}#${BRANCH_NAME}#${COMMIT_SHA}"]
